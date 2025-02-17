@@ -466,8 +466,8 @@ http://www.stephenhobley.com/blog/2011/03/14/the-last-darned-midi-interface-ill-
 
 #if SD_FAT_TYPE == 0      // SDFat
 typedef SdFat SDFAT;      ///< SDFat class used
-typedef File SDDIR;       ///< File type for folders
-typedef File SDFILE;      ///< File type for files
+typedef SdFile SDDIR;       ///< File type for folders
+typedef SdFile SDFILE;      ///< File type for files
 #elif SD_FAT_TYPE == 1    // FAT16/FAT32
 typedef SdFat32 SDFAT;    ///< SDFat class used
 typedef File32 SDDIR;     ///< File type for folders
